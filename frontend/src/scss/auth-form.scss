@@ -1,0 +1,21 @@
+.auth-form__container {
+    min-height: 40%;
+
+    .auth-form {
+        padding: 1em;
+
+        .auth-form__title {
+            text-align: center;
+            margin-bottom: .5em;
+        }
+
+        .auth-form__field {
+            margin: .5em 0;
+        }
+
+        .auth-form__action-button {
+            margin: 1em 0;
+            background-color: var(--primary-color);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.car-card-item {
+    text-decoration: none;
+
+    .car-card__details {
+        .car__price {
+            color: green;
+            font-weight: bold;
+        }
+
+        .car__mileage {
+            color: blue;
+        }
+    }
+}

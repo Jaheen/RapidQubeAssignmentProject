@@ -1,0 +1,22 @@
+#add-todo {
+    margin: .5em 0;
+    padding: 1em;
+
+    .title {
+        text-align: center;
+    }
+
+    input {
+        outline: none;
+        border: none;
+        padding: 1em;
+        background-color: #f4f4f4;
+        width: 100%;
+        margin: .5em 0;
+        resize: none;
+    }
+
+    .add-todo__form {
+        margin: 1em 0
+    }
+}

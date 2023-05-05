@@ -1,0 +1,38 @@
+.todo-item {
+    margin: .5em 0;
+
+    .todo-item__title {
+        flex-grow: 1;
+    }
+
+    .todo-item__title.completed {
+        text-decoration: line-through;
+    }
+
+    .done-button {
+        &:hover {
+            background-color: rgb(36, 176, 12);
+            color: white;
+        }
+    }
+
+    .delete-button {
+        margin: 0 .25em;
+
+        &:hover {
+            background-color: rgba(255, 34, 34, 0.835);
+            color: white;
+        }
+    }
+}
+
+.todo-item.completed {
+    .todo-item__title {
+        text-decoration: line-through;
+    }
+
+    .done-button {
+        background-color: rgb(36, 176, 12);
+        color: white;
+    }
+}

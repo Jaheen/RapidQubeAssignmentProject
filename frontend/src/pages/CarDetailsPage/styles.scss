@@ -1,0 +1,63 @@
+#car-details-page {
+    .car-data-container {
+        .car-data {
+            padding: 1em;
+
+            img.car__image {
+                height: auto;
+                width: fit-content;
+                margin: auto;
+            }
+
+            span {
+                margin: auto;
+                font-weight: bold;
+            }
+
+            h2,
+            p {
+                text-align: center;
+            }
+
+            .car__availability.available {
+                color: green;
+                font-size: 20px;
+            }
+
+            .car__availability.unavailable {
+                color: red;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.dialog {
+    .MuiPaper-root {
+        padding: 1em;
+        max-width: 420px;
+
+        .dialog-header {
+            min-width: 300px;
+            display: flex;
+            align-items: center;
+
+            .header__title {
+                margin-left: .5em;
+            }
+        }
+
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                outline: none;
+                border: none;
+                padding: 1em;
+                background-color: #f4f4f4;
+                margin: 1em 0;
+            }
+        }
+    }
+}

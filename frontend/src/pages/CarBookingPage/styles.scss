@@ -1,0 +1,54 @@
+#car-booking-page {
+    .main {
+        width: 100%;
+        position: relative;
+
+        img.main__image {
+            width: inherit;
+        }
+
+        .main__message {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .main__action-button {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 20%;
+        }
+    }
+}
+
+#booking-detail-picker {
+    .MuiPaper-root {
+        padding: 1em;
+        max-width: 420px;
+
+        .dialog-header {
+            min-width: 300px;
+
+            .header__title {
+                font-size: 18px;
+                margin-left: .5em;
+            }
+        }
+
+        .detail-form {
+            .form__field-container {
+                .form__field-title {
+                    margin-bottom: 10px;
+                }
+            }
+            .form__action-button{
+                margin: 1em 0;
+            }
+        }
+    }
+}
