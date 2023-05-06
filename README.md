@@ -1,10 +1,13 @@
-# RapidQubeAssignmentProject
 
-To run this 
+# RapidQube Assignment project
+I have deployed my application to render.com
+visit [deployed-site](https://jaheen-rapidqube.onrender.com/)
 
-Run npm install inside frontend and backend folders
+# or of you want to run it on your computer
 
-Run "npm run dev" inside backend folder
-Run "npm start" inside frontend folder
-
-both will run
+- For frontend folder
+    - run **npm install** inside frontend folder
+    - run **npm start** inside frontend folder
+- For backend folder
+    - run **npm install** inside backend folder
+    - run **npm run dev** inside backend folder
