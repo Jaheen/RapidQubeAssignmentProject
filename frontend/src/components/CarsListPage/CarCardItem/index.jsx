@@ -7,7 +7,7 @@ import "./styles.scss"
 
 export default function CarCardItem(props) {
 
-    const { car: { carId, name, price, features, image, mileage, isBooked } } = props
+    const { car: { carId, name, price, features, image, mileage } } = props
     const { stateName, districtName } = useParams()
 
     return (
@@ -19,7 +19,6 @@ export default function CarCardItem(props) {
                     <p className="car__features">{features}</p>
                     <p className="car__price">Price {'->'} Rs{price}/KM</p>
                     <p className="car__mileage">Fuel Economy {'->'} {mileage} KM/L</p>
-                    <p style={{ color: "red" }}>{isBooked ? "Unavailable" : "Available"}</p>
                 </CardContent>
             </Card>
         </Link>

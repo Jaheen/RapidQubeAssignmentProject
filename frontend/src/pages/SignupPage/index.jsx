@@ -6,6 +6,7 @@ import Snackbar from "@mui/material/Snackbar"
 import { useState } from "react"
 import { AuthService } from "api/rest/services"
 import { AuthConfig } from "config"
+import { Link } from "react-router-dom"
 import "./styles.scss"
 
 
@@ -71,6 +72,8 @@ export default function SignupPage() {
                         onChange={(ev) => setConfirmPassword({ value: ev.target.value, error: false, helperText: "" })} />
 
                     <Button className="auth-form__action-button" variant="contained" fullWidth onClick={onSignupButtonPressed}>Sign Up</Button>
+
+                    <Link to="/login">Already have an account? Login</Link>
                 </Paper>
 
             </Grid>
