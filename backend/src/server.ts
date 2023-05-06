@@ -1,3 +1,4 @@
+import * as path from "path"
 import { Server as HTTPServer, createServer } from "http"
 import * as express from "express"
 import { ApiRouter, AuthRouter } from "routers"
@@ -43,12 +44,17 @@ export default class ProjectServer {
             if (isConnected) console.log("Connected to MongoDB Database")
         })
 
-        // this.application.use(express.static("public"))
-
         this.application.use("/auth", AuthRouter)
         this.application.use("/api", ApiRouter)
-        
-        this.application.use("*", express.static("public"))
+
+        // serve static
+        this.application.use(express.static("public", { index: false }))
+
+        this.application.get("*", (req, res) => {
+            res.sendFile(
+                path.join(__dirname, "../public/index.html")
+            );
+        });
 
         // start server to listen
         this.httpServer.listen(this.PORT, () => {

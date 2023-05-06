@@ -55,7 +55,7 @@ export default class AuthService {
                         AppMailer.sendSimpleTextMail(
                             user.email,
                             "RapidQube Assignment Project Signup",
-                            `Dear name,\n\tThank you for signing up in my project. If you're seeing this mail means you're an user of my project`
+                            `Dear ${firstName},\n\tThank you for signing up in my project. If you're seeing this mail means you're an user of my project`
                         )
                     })
                 }

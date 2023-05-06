@@ -10,9 +10,6 @@ ApiRouter.use(BodyParser.json())
 // use auth middleware on all api requests
 ApiRouter.use(AuthMiddleware)
 
-ApiRouter.get("/", (req, res) => res.json("Hello"))
-
-
 // Todos routes
 ApiRouter.get("/todos/getMyTodos", TodosController.getMyTodos)
 ApiRouter.post("/todos/addTodo", TodosController.addTodo)
